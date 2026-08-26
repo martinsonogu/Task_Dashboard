@@ -1,0 +1,14 @@
+.badge {
+  text-transform: capitalize;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+.low {
+  color: #15803d;
+}
+.medium {
+  color: #b45309;
+}
+.high {
+  color: #be123c;
+}

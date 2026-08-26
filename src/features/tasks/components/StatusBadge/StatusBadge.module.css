@@ -1,0 +1,19 @@
+.badge {
+  display: inline-flex;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+.todo {
+  background: #f1f5f9;
+  color: #475569;
+}
+.in-progress {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+.done {
+  background: #dcfce7;
+  color: #15803d;
+}

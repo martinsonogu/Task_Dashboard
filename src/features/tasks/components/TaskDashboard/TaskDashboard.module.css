@@ -1,0 +1,28 @@
+.page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eef2ff 0, #f8fafc 300px);
+  padding: 2rem 1rem 4rem;
+}
+.shell {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+.error {
+  padding: 2rem;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  border-radius: 14px;
+  color: #9f1239;
+}
+.error h2 {
+  margin-top: 0;
+}
+.error button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  background: #be123c;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}

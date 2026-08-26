@@ -1,0 +1,81 @@
+.card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.04);
+}
+.card h3 {
+  margin: 0.9rem 0 0.4rem;
+  font-size: 1rem;
+}
+.card p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+.top,
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.meta {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin: 1rem 0;
+}
+.controls {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.controls select {
+  margin-right: auto;
+  padding: 0.55rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+}
+.controls button {
+  padding: 0.5rem 0.65rem;
+  font-size: 0.8rem;
+}
+.compact {
+  display: grid;
+  grid-template-columns: minmax(200px, 1.4fr) 2fr auto auto;
+  gap: 1rem;
+  align-items: center;
+}
+.compact h3,
+.compact p,
+.compact .meta {
+  margin: 0;
+}
+.compact .top {
+  display: none;
+}
+.compact .controls {
+  min-width: 290px;
+}
+@media (max-width: 800px) {
+  .compact {
+    display: block;
+  }
+  .compact .top {
+    display: flex;
+  }
+  .compact h3 {
+    margin: 0.9rem 0 0.4rem;
+  }
+  .compact p {
+    margin: 0;
+  }
+  .compact .meta {
+    margin: 1rem 0;
+  }
+  .compact .controls {
+    min-width: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.empty {
+  text-align: center;
+  background: white;
+  border: 1px dashed #cbd5e1;
+  border-radius: 16px;
+  padding: 3rem 1rem;
+}
+.empty div {
+  font-size: 2rem;
+}
+.empty h2 {
+  margin: 0.7rem 0 0.3rem;
+}
+.empty p {
+  color: #64748b;
+  margin: 0 0 1rem;
+}
