@@ -7,10 +7,15 @@ A production-oriented React + TypeScript task dashboard using Vite, React Router
 ```bash
 cp .env.example .env
 npm install
-npm run dev
+npm run dev:all
 ```
 
-The default `VITE_API_MODE=mock` stores tasks in localStorage. Set it to `remote` and configure `VITE_API_URL` when a REST backend is available.
+Start PostgreSQL with a `task_dashboard` database before running the app. The
+API creates its `tasks` table on startup and serves the frontend through the
+Vite proxy. For frontend-only work, set `VITE_API_MODE=mock` to use localStorage.
+
+The backend exposes `GET /health`, `GET /metrics`, and task CRUD endpoints under
+`/api/tasks`.
 
 ## Architecture
 
