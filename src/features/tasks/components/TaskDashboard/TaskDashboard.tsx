@@ -41,7 +41,7 @@ export function TaskDashboard() {
   const update = useUpdateTask();
   const remove = useDeleteTask();
 
-  const tasks = tasksQuery.data ?? [];
+  const tasks = useMemo(() => tasksQuery.data ?? [], [tasksQuery.data]);
   const visible = useMemo(() => filterTasks(tasks, filters), [tasks, filters]);
   const selected = tasks.find((t) => t.id === ui.selectedTaskId);
 
